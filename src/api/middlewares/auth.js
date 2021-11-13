@@ -17,9 +17,3 @@ function auth(req, res, next) {
 }
 
 export { auth, JWTSecret };
-
-/**
- *   if (authToken != undefined) {
-   
-  } 
- */

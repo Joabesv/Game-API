@@ -4,7 +4,7 @@ import jwt from 'jsonwebtoken';
 import { auth, JWTSecret } from './middlewares/auth.js';
 
 const app = express();
-const port = 4444;
+const port = 4445;
 
 function validate(object, schema) {
   return Object.keys(schema)
@@ -61,7 +61,7 @@ const fakeDb = {
 
 app.get('/games', auth, (req, res) => {
   res.statusCode = 200;
-  res.json({ gameList: fakeDb.games, user: req.loggedUser });
+  res.json({ gameList: fakeDb.games });
 });
 
 app.get('/game/:id', auth, (req, res) => {
