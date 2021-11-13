@@ -1,0 +1,19 @@
+/* yarn add -D prettier eslint-prettier-config eslint-plugin-import eslint-config-airbnb-base */
+
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": ["airbnb-base", "prettier"],
+  "parserOptions": {
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "rules": {
+    "no-console": "off",
+    "eqeqeq": "off",
+    "consistent-return": "off"
+  }
+}
